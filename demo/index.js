@@ -1,6 +1,9 @@
 import Vditor from '../src/index'
 import '../src/assets/less/index.less'
 
+// 如果想调整该脚本中的文件引用路径，则需做如下修改，但即使这样，使用 tomcat 等部署时也会出现问题，CSS 文件能访问到，但 JS 文件内全部使用 cdn 来引用资源和其他脚本，无法访问，故遵循使用 CDN 方式
+// import './assets/less/index.less' // 同时需要修改 webpack.start.js:"module"/"rules" 这些 less 文件只在该文件中使用
+// webpack.start.js: include: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'demo')],
 // new VConsole()
 
 let toolbar
