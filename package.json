@@ -1,12 +1,10 @@
 {
-  "name": "vditor",
+  "name": "cditor",
   "version": "3.10.7",
-  "description": "♏ 易于使用的 Markdown 编辑器，为适配不同的应用场景而生",
-  "author": "Vanessa <v@b3log.org> (http://vanessa.b3log.org)",
-  "homepage": "https://b3log.org/vditor",
+  "description": "基于 Vditor 修改的自用 Markdown 编辑器，欢迎尝试~",
+  "author": "city945",
   "jsdelivr": "dist/index.min.js",
   "main": "dist/index.js",
-  "funding": "https://ld246.com/sponsor",
   "files": [
     "dist/*",
     "src/index.ts",
@@ -57,10 +55,7 @@
     "webpack-dev-server": "^4.1.0"
   },
   "license": "MIT",
-  "repository": "git://github.com/Vanessa219/vditor.git",
-  "bugs": {
-    "url": "https://github.com/Vanessa219/vditor/issues"
-  },
+  "repository": "git://github.com/city945/cditor.git",
   "scripts": {
     "lint": "eslint --fix --ext src/**/*.ts",
     "test:watch": "jest --watch",

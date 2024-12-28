@@ -50,14 +50,17 @@ class Vditor extends VditorMethod {
         super();
         this.version = VDITOR_VERSION;
 
+        // 字符串类型的 id 转为 HTMLElement
         if (typeof id === "string") {
             if (!options) {
+                // 没定义选项时，默认开启缓存
                 options = {
                     cache: {
                         id: `vditor${id}`,
                     },
                 };
             } else if (!options.cache) {
+                // 选项中定义了不使用缓存时，配置缓存选项的 id
                 options.cache = {id: `vditor${id}`};
             } else if (!options.cache.id) {
                 options.cache.id = `vditor${id}`;
@@ -66,9 +69,11 @@ class Vditor extends VditorMethod {
                 this.showErrorTip(`Failed to get element by id: ${id}`);
                 return;
             }
+            // 根据字符串类型的 id 获取 HTMLElement
             id = document.getElementById(id);
         }
 
+        // 获取用户定义选项和默认选项合并结果
         const getOptions = new Options(options);
         const mergedOptions = getOptions.merge();
 
@@ -489,6 +494,7 @@ class Vditor extends VditorMethod {
             tip: new Tip(),
         };
 
+        // 可以类似 Python 中一样直接定义并为属性赋值
         this.vditor.sv = new Editor(this.vditor);
         this.vditor.undo = new Undo();
         this.vditor.wysiwyg = new WYSIWYG(this.vditor);
@@ -512,6 +518,7 @@ class Vditor extends VditorMethod {
             `${mergedOptions.cdn}/dist/js/lute/lute.min.js`,
             "vditorLuteScript",
         ).then(() => {
+            // 导入 lute 成功后设置其参数
             this.vditor.lute = setLute({
                 autoSpace: this.vditor.options.preview.markdown.autoSpace,
                 gfmAutoLink: this.vditor.options.preview.markdown.gfmAutoLink,

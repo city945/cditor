@@ -22,6 +22,7 @@ export const initUI = (vditor: IVditor) => {
   if (typeof vditor.options.minHeight === "number") {
     vditor.element.style.minHeight = vditor.options.minHeight + "px";
   }
+  // 设置的是网页总宽度而不是文档宽度，此参数没啥用
   if (typeof vditor.options.width === "number") {
     vditor.element.style.width = vditor.options.width + "px";
   } else {
@@ -30,6 +31,7 @@ export const initUI = (vditor: IVditor) => {
 
   vditor.element.appendChild(vditor.toolbar.element);
 
+  // 文档内容
   const contentElement = document.createElement("div");
   contentElement.className = "vditor-content";
 
@@ -58,6 +60,7 @@ export const initUI = (vditor: IVditor) => {
     contentElement.appendChild(vditor.upload.element);
   }
 
+  // @? 此选项似乎没啥用没效果
   if (vditor.options.resize.enable) {
     contentElement.appendChild(vditor.resize.element);
   }
@@ -78,6 +81,7 @@ export const initUI = (vditor: IVditor) => {
       '<iframe id="vditorExportIframe" style="width: 100%;height: 0;border: 0"></iframe>');
   }
 
+  // afterRender 返回 md 文档内容
   setEditMode(vditor, vditor.options.mode, afterRender(vditor));
 
   document.execCommand("DefaultParagraphSeparator", false, "p");
@@ -166,6 +170,7 @@ const afterRender = (vditor: IVditor) => {
   });
 
   // set default value
+  // @? localStorage 此变量为何凭空出现
   let initValue = accessLocalStorage() && localStorage.getItem(vditor.options.cache.id);
   if (!vditor.options.cache.enable || !initValue) {
     if (vditor.options.value) {

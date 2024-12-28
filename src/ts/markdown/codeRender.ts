@@ -42,6 +42,7 @@ export const codeRender = (element: HTMLElement, option?: IHljs) => {
 
         const divElement = document.createElement("div");
         divElement.className = "vditor-copy";
+        // 代码块的复制按钮
         divElement.innerHTML = `<span aria-label="${window.VditorI18n?.copy || "复制"}"
 onmouseover="this.setAttribute('aria-label', '${window.VditorI18n?.copy || "复制"}')"
 class="vditor-tooltipped vditor-tooltipped__w"

@@ -35,6 +35,7 @@
   }
 
   blockquote:empty::before,
+  // 针对 <pre><code></code></pre> 其中内容为空的标签生效
   pre > code:empty::before,
   p:empty::before,
   h1:empty::after,
@@ -46,9 +47,10 @@
     content: ' ';
   }
 
+  // 修改行级代码块的样式
   code[data-marker="`"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
   }
 
   &__block {

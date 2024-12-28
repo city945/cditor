@@ -19,6 +19,7 @@ export const highlightRender = (hljsOption?: IHljs, element: HTMLElement | Docum
         return;
     }
 
+    // 这里只能得到多行的代码块，该文件应该是用于对多行代码库进行高亮的
     const codes = element.querySelectorAll("pre > code");
     if (codes.length === 0) {
         return;

@@ -14,6 +14,7 @@ export const addScriptSync = (path: string, id: string) => {
     document.head.appendChild(scriptElement);
 };
 
+// 封装向网页添加脚本，类似在 HTML 中添加 <script src="xxx.js"></script>
 export const addScript = (path: string, id: string) => {
     return new Promise((resolve, reject) => {
         if (document.getElementById(id)) {

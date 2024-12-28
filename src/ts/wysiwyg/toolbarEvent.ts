@@ -196,6 +196,7 @@ export const toolbarEvent = (vditor: IVditor, actionBtn: Element, event: Event) 
             if (range.toString() === "") {
                 node.innerHTML = "<pre><code><wbr>\n</code></pre>";
             } else {
+                // 这里还是多行代码
                 node.innerHTML = `<pre><code>${range.toString()}<wbr></code></pre>`;
                 range.deleteContents();
             }

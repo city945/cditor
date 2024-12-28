@@ -5,6 +5,7 @@ const _VDITOR_VERSION = VDITOR_VERSION;
 export {_VDITOR_VERSION as VDITOR_VERSION};
 
 export abstract class Constants {
+    // Unicode 字符编码中的零宽度空格，顾名思义
     public static readonly ZWSP: string = "\u200b";
     public static readonly DROP_EDITOR: string = "application/editor";
     public static readonly MOBILE_WIDTH: number = 520;

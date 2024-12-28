@@ -1,32 +1,6 @@
-<p align="center">
-<img alt="Vditor" src="https://b3log.org/images/brand/vditor-128.png" />
-
-<br>
-易于使用的 Markdown 编辑器，为适配不同的应用场景而生
-<br><br>
-<a title="MIT" target="_blank" href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square"></a>
-<a title="npm bundle size" target="_blank" href="https://www.npmjs.com/package/vditor"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/vditor?style=flat-square&color=blueviolet"></a>
-<a title="Version" target="_blank" href="https://www.npmjs.com/package/vditor"><img src="https://img.shields.io/npm/v/vditor.svg?style=flat-square"></a><br>
-<a title="Downloads" target="_blank" href="https://www.npmjs.com/package/vditor"><img src="https://img.shields.io/npm/dt/vditor.svg?style=flat-square&color=97ca00"></a>
-<a title="jsdelivr" target="_blank" href="https://www.jsdelivr.com/package/npm/vditor"><img src="https://data.jsdelivr.com/v1/package/npm/vditor/badge"/></a>
-<a title="Hits" target="_blank" href="https://github.com/88250/hits"><img src="https://hits.b3log.org/Vanessa219/vditor.svg"></a> <br><br>
-<a title="GitHub Watchers" target="_blank" href="https://github.com/Vanessa219/vditor/watchers"><img src="https://img.shields.io/github/watchers/Vanessa219/vditor.svg?label=Watchers&style=social"></a>
-<a title="GitHub Stars" target="_blank" href="https://github.com/Vanessa219/vditor/stargazers"><img src="https://img.shields.io/github/stars/Vanessa219/vditor.svg?label=Stars&style=social"></a>
-<a title="GitHub Forks" target="_blank" href="https://github.com/Vanessa219/vditor/network/members"><img src="https://img.shields.io/github/forks/Vanessa219/vditor.svg?label=Forks&style=social"></a>
-<a title="Author GitHub Followers" target="_blank" href="https://github.com/vanessa219"><img src="https://img.shields.io/github/followers/vanessa219.svg?label=Followers&style=social"></a>
-</p>
-
-<p align="center">
-<a href="https://github.com/Vanessa219/vditor/blob/master/README_en_US.md">English</a> &nbsp;|&nbsp; <a href="https://b3log.org/vditor/demo/index.html">Demo</a>
-</p>
-
 ## 💡 简介
 
-[Vditor](https://b3log.org/vditor) 是一款浏览器端的 Markdown 编辑器，支持所见即所得、即时渲染（类似 Typora）和分屏预览模式。它使用 TypeScript 实现，支持原生 JavaScript 以及 Vue、React、Angular 和 Svelte 等框架。
-
-欢迎到 [Vditor 官方讨论区](https://ld246.com/tag/vditor)了解更多。同时也欢迎关注 B3log 开源社区微信公众号 `B3log开源`：
-
-![b3logos.jpg](https://b3logfile.com/file/2020/08/b3logos-032af045.jpg)
+基于 [Vditor]([Vditor](https://b3log.org/vditor)) 修改的自用 Markdown 编辑器，欢迎尝试~
 
 ## 🗺️ 背景
 
@@ -128,7 +102,40 @@ Vditor 在这些方面做了努力，希望能为现代化的通用 Markdown 编
 npm install vditor --save
 ```
 
+```shell
+npm install vditor --save
+```
+
+```shell
+npm install vditor --save
+```
+
+```shell
+npm install vditor --save
+```
+
 * 在代码中引入并初始化对象，可参考 [index.js](https://github.com/Vanessa219/vditor/blob/master/demo/index.js)
+
+```ts
+import Vditor from 'vditor'
+import "~vditor/src/assets/less/index"
+
+const vditor = new Vditor(id, {options...})
+```
+
+```ts
+import Vditor from 'vditor'
+import "~vditor/src/assets/less/index"
+
+const vditor = new Vditor(id, {options...})
+```
+
+```ts
+import Vditor from 'vditor'
+import "~vditor/src/assets/less/index"
+
+const vditor = new Vditor(id, {options...})
+```
 
 ```ts
 import Vditor from 'vditor'
@@ -140,6 +147,24 @@ const vditor = new Vditor(id, {options...})
 ### HTML script
 
 * 在 HTML 中插入 CSS 和 JavaScript，可参考 [demo](https://b3log.org/vditor/demo/index.html)
+
+```html
+<!-- ⚠️生产环境请指定版本号，如 https://unpkg.com/vditor@x.x.x/dist... -->
+<link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css" />
+<script src="https://unpkg.com/vditor/dist/index.min.js"></script>
+```
+
+```html
+<!-- ⚠️生产环境请指定版本号，如 https://unpkg.com/vditor@x.x.x/dist... -->
+<link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css" />
+<script src="https://unpkg.com/vditor/dist/index.min.js"></script>
+```
+
+```html
+<!-- ⚠️生产环境请指定版本号，如 https://unpkg.com/vditor@x.x.x/dist... -->
+<link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css" />
+<script src="https://unpkg.com/vditor/dist/index.min.js"></script>
+```
 
 ```html
 <!-- ⚠️生产环境请指定版本号，如 https://unpkg.com/vditor@x.x.x/dist... -->
@@ -192,32 +217,32 @@ Markdown 输出的 HTML 所展现的外观。内置 ant-design, light，dark，w
 
 #### options
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| i18n | 多语言，参见 ITips | - |
-| undoDelay | 历史记录间隔 | - |
-| after | 编辑器异步渲染完成后的回调方法 | - |
-| height | 编辑器总高度 | 'auto' |
-| minHeight | 编辑区域最小高度 | - |
-| width | 编辑器总宽度，支持 % | 'auto' |
-| placeholder | 输入区域为空时的提示 | '' |
-| lang | 语言种类：en_US, fr_FR, pt_BR, ja_JP, ko_KR, ru_RU, sv_SE, zh_CN, zh_TW | 'zh_CN' |
-| input(value: string) | 输入后触发  | - |
-| focus(value: string) | 聚焦后触发 | - |
-| blur(value: string) | 失焦后触发 | - |
-| keydown(event: KeyboardEvent) | 按下后触发 | - |
-| esc(value: string) | <kbd>esc</kbd> 按下后触发 | - |
-| ctrlEnter(value: string) | <kbd>⌘/ctrl+enter</kbd> 按下后触发 | - |
-| select(value: string) | 编辑器中选中文字后触发 | - |
-| tab | <kbd>tab</kbd> 键操作字符串，支持 `\t` 及任意字符串 | - |
-| typewriterMode | 是否启用打字机模式 | false |
-| cdn | 配置自建 CDN 地址 | `https://unpkg.com/vditor@${VDITOR_VERSION}` |
-| mode | 可选模式：sv, ir, wysiwyg | 'ir' |
-| debugger | 是否显示日志 | false |
-| value | 编辑器初始化值 | '' |
-| theme | 主题：classic, dark | 'classic' |
-| icon | 图标风格：ant, material | 'ant' |
-| customRenders: {language: string, render: (element: HTMLElement, vditor: IVditor) => void}[] | 自定义渲染器 | [] |
+|                                                                                              | 说明                                                                    | 默认值                                         |
+| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------- |
+| i18n                                                                                         | 多语言，参见 ITips                                                      | -                                              |
+| undoDelay                                                                                    | 历史记录间隔                                                            | -                                              |
+| after                                                                                        | 编辑器异步渲染完成后的回调方法                                          | -                                              |
+| height                                                                                       | 编辑器总高度                                                            | 'auto'                                         |
+| minHeight                                                                                    | 编辑区域最小高度                                                        | -                                              |
+| width                                                                                        | 编辑器总宽度，支持 %                                                    | 'auto'                                         |
+| placeholder                                                                                  | 输入区域为空时的提示                                                    | ''                                             |
+| lang                                                                                         | 语言种类：en_US, fr_FR, pt_BR, ja_JP, ko_KR, ru_RU, sv_SE, zh_CN, zh_TW | 'zh_CN'                                        |
+| input(value: string)                                                                         | 输入后触发                                                              | -                                              |
+| focus(value: string)                                                                         | 聚焦后触发                                                              | -                                              |
+| blur(value: string)                                                                          | 失焦后触发                                                              | -                                              |
+| keydown(event: KeyboardEvent)                                                                | 按下后触发                                                              | -                                              |
+| esc(value: string)                                                                           | <kbd>esc</kbd> 按下后触发                                               | -                                              |
+| ctrlEnter(value: string)                                                                     | <kbd>⌘/ctrl+enter</kbd> 按下后触发                                     | -                                              |
+| select(value: string)                                                                        | 编辑器中选中文字后触发                                                  | -                                              |
+| tab                                                                                          | <kbd>tab</kbd> 键操作字符串，支持 `\t` 及任意字符串                   | -                                              |
+| typewriterMode                                                                               | 是否启用打字机模式                                                      | false                                          |
+| cdn                                                                                          | 配置自建 CDN 地址                                                       | `https://unpkg.com/vditor@${VDITOR_VERSION}` |
+| mode                                                                                         | 可选模式：sv, ir, wysiwyg                                               | 'ir'                                           |
+| debugger                                                                                     | 是否显示日志                                                            | false                                          |
+| value                                                                                        | 编辑器初始化值                                                          | ''                                             |
+| theme                                                                                        | 主题：classic, dark                                                     | 'classic'                                      |
+| icon                                                                                         | 图标风格：ant, material                                                 | 'ant'                                          |
+| customRenders: {language: string, render: (element: HTMLElement, vditor: IVditor) => void}[] | 自定义渲染器                                                            | []                                             |
 
 #### options.toolbar
 
@@ -240,155 +265,239 @@ new Vditor('vditor', {
 })
 ```
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| name | 唯一标示 | - |
-| icon | svg 图标 | - |
-| tip | 提示 | - |
-| tipPosition | 提示位置：'n', 'ne', 'nw', 's', 'se', 'sw', 'w', 'e' | - |
-| hotkey | 快捷键，格式为<kbd>⇧⌘</kbd>/<kbd>⌘</kbd>/<kbd>⌥⌘</kbd>| - |
-| suffix | 插入编辑器中的后缀 | - |
-| prefix | 插入编辑器中的前缀 | - |
-| click(event: Event, vditor: IVditor) | 自定义按钮点击时触发的事件 | - |
-| className | 样式名 | '' |
-| toolbar?: Array<options.toolbar> | 子菜单 | - |
+```js
+new Vditor('vditor', {
+  toolbar: [
+    {
+      hotkey: '⇧⌘S',
+      name: 'sponsor',
+      tipPosition: 's',
+      tip: '成为赞助者',
+      className: 'right',
+      icon: '<svg t="1589994565028" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2808" width="32" height="32"><path d="M506.6 423.6m-29.8 0a29.8 29.8 0 1 0 59.6 0 29.8 29.8 0 1 0-59.6 0Z" fill="#0F0F0F" p-id="2809"></path><path d="M717.8 114.5c-83.5 0-158.4 65.4-211.2 122-52.7-56.6-127.7-122-211.2-122-159.5 0-273.9 129.3-273.9 288.9C21.5 562.9 429.3 913 506.6 913s485.1-350.1 485.1-509.7c0.1-159.5-114.4-288.8-273.9-288.8z" fill="#FAFCFB" p-id="2810"></path><path d="M506.6 926c-22 0-61-20.1-116-59.6-51.5-37-109.9-86.4-164.6-139-65.4-63-217.5-220.6-217.5-324 0-81.4 28.6-157.1 80.6-213.1 53.2-57.2 126.4-88.8 206.3-88.8 40 0 81.8 14.1 124.2 41.9 28.1 18.4 56.6 42.8 86.9 74.2 30.3-31.5 58.9-55.8 86.9-74.2 42.5-27.8 84.3-41.9 124.2-41.9 79.9 0 153.2 31.5 206.3 88.8 52 56 80.6 131.7 80.6 213.1 0 103.4-152.1 261-217.5 324-54.6 52.6-113.1 102-164.6 139-54.8 39.5-93.8 59.6-115.8 59.6zM295.4 127.5c-72.6 0-139.1 28.6-187.3 80.4-47.5 51.2-73.7 120.6-73.7 195.4 0 64.8 78.3 178.9 209.6 305.3 53.8 51.8 111.2 100.3 161.7 136.6 56.1 40.4 88.9 54.8 100.9 54.8s44.7-14.4 100.9-54.8c50.5-36.3 108-84.9 161.7-136.6 131.2-126.4 209.6-240.5 209.6-305.3 0-74.9-26.2-144.2-73.7-195.4-48.2-51.9-114.7-80.4-187.3-80.4-61.8 0-127.8 38.5-201.7 117.9-2.5 2.6-5.9 4.1-9.5 4.1s-7.1-1.5-9.5-4.1C423.2 166 357.2 127.5 295.4 127.5z" fill="#141414" p-id="2811"></path><path d="M353.9 415.6m-33.8 0a33.8 33.8 0 1 0 67.6 0 33.8 33.8 0 1 0-67.6 0Z" fill="#0F0F0F" p-id="2812"></path><path d="M659.3 415.6m-33.8 0a33.8 33.8 0 1 0 67.6 0 33.8 33.8 0 1 0-67.6 0Z" fill="#0F0F0F" p-id="2813"></path><path d="M411.6 538.5c0 52.3 42.8 95 95 95 52.3 0 95-42.8 95-95v-31.7h-190v31.7z" fill="#5B5143" p-id="2814"></path><path d="M506.6 646.5c-59.6 0-108-48.5-108-108v-31.7c0-7.2 5.8-13 13-13h190.1c7.2 0 13 5.8 13 13v31.7c0 59.5-48.5 108-108.1 108z m-82-126.7v18.7c0 45.2 36.8 82 82 82s82-36.8 82-82v-18.7h-164z" fill="#141414" p-id="2815"></path><path d="M450.4 578.9a54.7 27.5 0 1 0 109.4 0 54.7 27.5 0 1 0-109.4 0Z" fill="#EA64F9" p-id="2816"></path><path d="M256 502.7a32.1 27.5 0 1 0 64.2 0 32.1 27.5 0 1 0-64.2 0Z" fill="#EFAFF9" p-id="2817"></path><path d="M703.3 502.7a32.1 27.5 0 1 0 64.2 0 32.1 27.5 0 1 0-64.2 0Z" fill="#EFAFF9" p-id="2818"></path></svg>',
+      click () {alert('捐赠地址：https://ld246.com/sponsor')},
+    }],
+})
+```
+
+```js
+new Vditor('vditor', {
+  toolbar: [
+    {
+      hotkey: '⇧⌘S',
+      name: 'sponsor',
+      tipPosition: 's',
+      tip: '成为赞助者',
+      className: 'right',
+      icon: '<svg t="1589994565028" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2808" width="32" height="32"><path d="M506.6 423.6m-29.8 0a29.8 29.8 0 1 0 59.6 0 29.8 29.8 0 1 0-59.6 0Z" fill="#0F0F0F" p-id="2809"></path><path d="M717.8 114.5c-83.5 0-158.4 65.4-211.2 122-52.7-56.6-127.7-122-211.2-122-159.5 0-273.9 129.3-273.9 288.9C21.5 562.9 429.3 913 506.6 913s485.1-350.1 485.1-509.7c0.1-159.5-114.4-288.8-273.9-288.8z" fill="#FAFCFB" p-id="2810"></path><path d="M506.6 926c-22 0-61-20.1-116-59.6-51.5-37-109.9-86.4-164.6-139-65.4-63-217.5-220.6-217.5-324 0-81.4 28.6-157.1 80.6-213.1 53.2-57.2 126.4-88.8 206.3-88.8 40 0 81.8 14.1 124.2 41.9 28.1 18.4 56.6 42.8 86.9 74.2 30.3-31.5 58.9-55.8 86.9-74.2 42.5-27.8 84.3-41.9 124.2-41.9 79.9 0 153.2 31.5 206.3 88.8 52 56 80.6 131.7 80.6 213.1 0 103.4-152.1 261-217.5 324-54.6 52.6-113.1 102-164.6 139-54.8 39.5-93.8 59.6-115.8 59.6zM295.4 127.5c-72.6 0-139.1 28.6-187.3 80.4-47.5 51.2-73.7 120.6-73.7 195.4 0 64.8 78.3 178.9 209.6 305.3 53.8 51.8 111.2 100.3 161.7 136.6 56.1 40.4 88.9 54.8 100.9 54.8s44.7-14.4 100.9-54.8c50.5-36.3 108-84.9 161.7-136.6 131.2-126.4 209.6-240.5 209.6-305.3 0-74.9-26.2-144.2-73.7-195.4-48.2-51.9-114.7-80.4-187.3-80.4-61.8 0-127.8 38.5-201.7 117.9-2.5 2.6-5.9 4.1-9.5 4.1s-7.1-1.5-9.5-4.1C423.2 166 357.2 127.5 295.4 127.5z" fill="#141414" p-id="2811"></path><path d="M353.9 415.6m-33.8 0a33.8 33.8 0 1 0 67.6 0 33.8 33.8 0 1 0-67.6 0Z" fill="#0F0F0F" p-id="2812"></path><path d="M659.3 415.6m-33.8 0a33.8 33.8 0 1 0 67.6 0 33.8 33.8 0 1 0-67.6 0Z" fill="#0F0F0F" p-id="2813"></path><path d="M411.6 538.5c0 52.3 42.8 95 95 95 52.3 0 95-42.8 95-95v-31.7h-190v31.7z" fill="#5B5143" p-id="2814"></path><path d="M506.6 646.5c-59.6 0-108-48.5-108-108v-31.7c0-7.2 5.8-13 13-13h190.1c7.2 0 13 5.8 13 13v31.7c0 59.5-48.5 108-108.1 108z m-82-126.7v18.7c0 45.2 36.8 82 82 82s82-36.8 82-82v-18.7h-164z" fill="#141414" p-id="2815"></path><path d="M450.4 578.9a54.7 27.5 0 1 0 109.4 0 54.7 27.5 0 1 0-109.4 0Z" fill="#EA64F9" p-id="2816"></path><path d="M256 502.7a32.1 27.5 0 1 0 64.2 0 32.1 27.5 0 1 0-64.2 0Z" fill="#EFAFF9" p-id="2817"></path><path d="M703.3 502.7a32.1 27.5 0 1 0 64.2 0 32.1 27.5 0 1 0-64.2 0Z" fill="#EFAFF9" p-id="2818"></path></svg>',
+      click () {alert('捐赠地址：https://ld246.com/sponsor')},
+    }],
+})
+```
+
+```js
+new Vditor('vditor', {
+  toolbar: [
+    {
+      hotkey: '⇧⌘S',
+      name: 'sponsor',
+      tipPosition: 's',
+      tip: '成为赞助者',
+      className: 'right',
+      icon: '<svg t="1589994565028" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2808" width="32" height="32"><path d="M506.6 423.6m-29.8 0a29.8 29.8 0 1 0 59.6 0 29.8 29.8 0 1 0-59.6 0Z" fill="#0F0F0F" p-id="2809"></path><path d="M717.8 114.5c-83.5 0-158.4 65.4-211.2 122-52.7-56.6-127.7-122-211.2-122-159.5 0-273.9 129.3-273.9 288.9C21.5 562.9 429.3 913 506.6 913s485.1-350.1 485.1-509.7c0.1-159.5-114.4-288.8-273.9-288.8z" fill="#FAFCFB" p-id="2810"></path><path d="M506.6 926c-22 0-61-20.1-116-59.6-51.5-37-109.9-86.4-164.6-139-65.4-63-217.5-220.6-217.5-324 0-81.4 28.6-157.1 80.6-213.1 53.2-57.2 126.4-88.8 206.3-88.8 40 0 81.8 14.1 124.2 41.9 28.1 18.4 56.6 42.8 86.9 74.2 30.3-31.5 58.9-55.8 86.9-74.2 42.5-27.8 84.3-41.9 124.2-41.9 79.9 0 153.2 31.5 206.3 88.8 52 56 80.6 131.7 80.6 213.1 0 103.4-152.1 261-217.5 324-54.6 52.6-113.1 102-164.6 139-54.8 39.5-93.8 59.6-115.8 59.6zM295.4 127.5c-72.6 0-139.1 28.6-187.3 80.4-47.5 51.2-73.7 120.6-73.7 195.4 0 64.8 78.3 178.9 209.6 305.3 53.8 51.8 111.2 100.3 161.7 136.6 56.1 40.4 88.9 54.8 100.9 54.8s44.7-14.4 100.9-54.8c50.5-36.3 108-84.9 161.7-136.6 131.2-126.4 209.6-240.5 209.6-305.3 0-74.9-26.2-144.2-73.7-195.4-48.2-51.9-114.7-80.4-187.3-80.4-61.8 0-127.8 38.5-201.7 117.9-2.5 2.6-5.9 4.1-9.5 4.1s-7.1-1.5-9.5-4.1C423.2 166 357.2 127.5 295.4 127.5z" fill="#141414" p-id="2811"></path><path d="M353.9 415.6m-33.8 0a33.8 33.8 0 1 0 67.6 0 33.8 33.8 0 1 0-67.6 0Z" fill="#0F0F0F" p-id="2812"></path><path d="M659.3 415.6m-33.8 0a33.8 33.8 0 1 0 67.6 0 33.8 33.8 0 1 0-67.6 0Z" fill="#0F0F0F" p-id="2813"></path><path d="M411.6 538.5c0 52.3 42.8 95 95 95 52.3 0 95-42.8 95-95v-31.7h-190v31.7z" fill="#5B5143" p-id="2814"></path><path d="M506.6 646.5c-59.6 0-108-48.5-108-108v-31.7c0-7.2 5.8-13 13-13h190.1c7.2 0 13 5.8 13 13v31.7c0 59.5-48.5 108-108.1 108z m-82-126.7v18.7c0 45.2 36.8 82 82 82s82-36.8 82-82v-18.7h-164z" fill="#141414" p-id="2815"></path><path d="M450.4 578.9a54.7 27.5 0 1 0 109.4 0 54.7 27.5 0 1 0-109.4 0Z" fill="#EA64F9" p-id="2816"></path><path d="M256 502.7a32.1 27.5 0 1 0 64.2 0 32.1 27.5 0 1 0-64.2 0Z" fill="#EFAFF9" p-id="2817"></path><path d="M703.3 502.7a32.1 27.5 0 1 0 64.2 0 32.1 27.5 0 1 0-64.2 0Z" fill="#EFAFF9" p-id="2818"></path></svg>',
+      click () {alert('捐赠地址：https://ld246.com/sponsor')},
+    }],
+})
+```
+
+|                                      | 说明                                                        | 默认值 |
+| ------------------------------------ | ----------------------------------------------------------- | ------ |
+| name                                 | 唯一标示                                                    | -      |
+| icon                                 | svg 图标                                                    | -      |
+| tip                                  | 提示                                                        | -      |
+| tipPosition                          | 提示位置：'n', 'ne', 'nw', 's', 'se', 'sw', 'w', 'e'        | -      |
+| hotkey                               | 快捷键，格式为<kbd>⇧⌘</kbd>/<kbd>⌘</kbd>/<kbd>⌥⌘</kbd> | -      |
+| suffix                               | 插入编辑器中的后缀                                          | -      |
+| prefix                               | 插入编辑器中的前缀                                          | -      |
+| click(event: Event, vditor: IVditor) | 自定义按钮点击时触发的事件                                  | -      |
+| className                            | 样式名                                                      | ''     |
+| toolbar?: Array<options.toolbar>     | 子菜单                                                      | -      |
 
 #### options.toolbarConfig
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| hide | 是否隐藏工具栏 | false |
-| pin | 是否固定工具栏 | false |
+|      | 说明           | 默认值 |
+| ---- | -------------- | ------ |
+| hide | 是否隐藏工具栏 | false  |
+| pin  | 是否固定工具栏 | false  |
 
 #### options.counter
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| enable | 是否启用计数器 | false |
-| after(length: number, counter: options.counter): void | 字数统计回调 | - |
-| max | 允许输入的最大值 | - |
-| type | 统计类型：'markdown', 'text' | 'markdown' |
+|                                                       | 说明                         | 默认值     |
+| ----------------------------------------------------- | ---------------------------- | ---------- |
+| enable                                                | 是否启用计数器               | false      |
+| after(length: number, counter: options.counter): void | 字数统计回调                 | -          |
+| max                                                   | 允许输入的最大值             | -          |
+| type                                                  | 统计类型：'markdown', 'text' | 'markdown' |
 
 #### options.cache
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| enable | 是否使用 localStorage 进行缓存 | true |
-| id | 缓存 key，第一个参数为元素且启用缓存时**必填** | - |
-| after(html: string): string | 缓存后的回调 | - |
+|                             | 说明                                                 | 默认值 |
+| --------------------------- | ---------------------------------------------------- | ------ |
+| enable                      | 是否使用 localStorage 进行缓存                       | true   |
+| id                          | 缓存 key，第一个参数为元素且启用缓存时**必填** | -      |
+| after(html: string): string | 缓存后的回调                                         | -      |
 
 #### options.comment
 
 ⚠️：仅支持 wysiwyg 模式
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| enable | 是否启用评论模式 | false |
-| add(id: string, text: string, commentsData: ICommentsData[]) | 添加评论回调 | - |
-| remove(ids: string[]) | 删除评论回调 | - |
-| scroll(top: number) | 滚动回调 | - |
-| adjustTop(commentsData: ICommentsData[]) | 文档修改时，适配评论高度 | - |
+|                                                              | 说明                     | 默认值 |
+| ------------------------------------------------------------ | ------------------------ | ------ |
+| enable                                                       | 是否启用评论模式         | false  |
+| add(id: string, text: string, commentsData: ICommentsData[]) | 添加评论回调             | -      |
+| remove(ids: string[])                                        | 删除评论回调             | -      |
+| scroll(top: number)                                          | 滚动回调                 | -      |
+| adjustTop(commentsData: ICommentsData[])                     | 文档修改时，适配评论高度 | -      |
 
 #### options.preview
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| delay | 预览 debounce 毫秒间隔 | 1000 |
-| maxWidth | 预览区域最大宽度 | 800 |
-| mode | 显示模式：both, editor | 'both' |
-| url | md 解析请求 | - |
-| parse(element: HTMLElement) | 预览回调 | - |
-| transform(html: string): string | 渲染之前回调 | - |
+|                                 | 说明                   | 默认值 |
+| ------------------------------- | ---------------------- | ------ |
+| delay                           | 预览 debounce 毫秒间隔 | 1000   |
+| maxWidth                        | 预览区域最大宽度       | 800    |
+| mode                            | 显示模式：both, editor | 'both' |
+| url                             | md 解析请求            | -      |
+| parse(element: HTMLElement)     | 预览回调               | -      |
+| transform(html: string): string | 渲染之前回调           | -      |
 
 #### options.preview.hljs
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| defaultLang | 未指定语言时默认使用该语言 | '' |
-| enable | 是否启用代码高亮 | true |
-| style | 可选值参见[Chroma](https://xyproto.github.io/splash/docs/longer/all.html) | `github` |
-| lineNumber | 是否启用行号 | false |
-| langs | 自定义指定语言 | [CODE_LANGUAGES](https://github.com/Vanessa219/vditor/blob/53ca8f9a0e511b37b5dae7c6b15eb933e9e02ccd/src/ts/constants.ts#L20) |
-| renderMenu(code: HTMLElement, copy: HTMLElement) | 渲染菜单按钮 | - |
+|                                                  | 说明                                                                   | 默认值                                                                                                                    |
+| ------------------------------------------------ | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| defaultLang                                      | 未指定语言时默认使用该语言                                             | ''                                                                                                                        |
+| enable                                           | 是否启用代码高亮                                                       | true                                                                                                                      |
+| style                                            | 可选值参见[Chroma](https://xyproto.github.io/splash/docs/longer/all.html) | `github`                                                                                                                |
+| lineNumber                                       | 是否启用行号                                                           | false                                                                                                                     |
+| langs                                            | 自定义指定语言                                                         | [CODE_LANGUAGES](https://github.com/Vanessa219/vditor/blob/53ca8f9a0e511b37b5dae7c6b15eb933e9e02ccd/src/ts/constants.ts#L20) |
+| renderMenu(code: HTMLElement, copy: HTMLElement) | 渲染菜单按钮                                                           | -                                                                                                                         |
 
 #### options.preview.markdown
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| autoSpace | 自动空格 | false |
-| gfmAutoLink | 自动链接 | true |
-| fixTermTypo | 自动矫正术语 | false |
-| toc | 插入目录 | false |
-| footnotes | 脚注 | true |
-| codeBlockPreview | wysiwyg 和 ir 模式下是否对代码块进行渲染 | true |
-| mathBlockPreview | wysiwyg 和 ir 模式下是否对数学公式进行渲染 | true |
-| paragraphBeginningSpace | 段落开头空两个 | false |
-| sanitize | 是否启用过滤 XSS | true |
-| listStyle | 为列表添加 data-style 属性 | false |
-| linkBase | 链接相对路径前缀 | '' |
-| linkPrefix | 链接强制前缀 | '' |
-| mark | 启用 mark 标记 | false |
+|                         | 说明                                       | 默认值 |
+| ----------------------- | ------------------------------------------ | ------ |
+| autoSpace               | 自动空格                                   | false  |
+| gfmAutoLink             | 自动链接                                   | true   |
+| fixTermTypo             | 自动矫正术语                               | false  |
+| toc                     | 插入目录                                   | false  |
+| footnotes               | 脚注                                       | true   |
+| codeBlockPreview        | wysiwyg 和 ir 模式下是否对代码块进行渲染   | true   |
+| mathBlockPreview        | wysiwyg 和 ir 模式下是否对数学公式进行渲染 | true   |
+| paragraphBeginningSpace | 段落开头空两个                             | false  |
+| sanitize                | 是否启用过滤 XSS                           | true   |
+| listStyle               | 为列表添加 data-style 属性                 | false  |
+| linkBase                | 链接相对路径前缀                           | ''     |
+| linkPrefix              | 链接强制前缀                               | ''     |
+| mark                    | 启用 mark 标记                             | false  |
 
 #### options.preview.theme
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| current | 当前主题 | "light" |
-| list | 可选主题列表 | { "ant-design": "Ant Design", dark: "Dark", light: "Light", wechat: "WeChat" } |
-| path | 主题样式地址 | `https://unpkg.com/vditor@${VDITOR_VERSION}/dist/css/content-theme` |
+|         | 说明         | 默认值                                                                         |
+| ------- | ------------ | ------------------------------------------------------------------------------ |
+| current | 当前主题     | "light"                                                                        |
+| list    | 可选主题列表 | { "ant-design": "Ant Design", dark: "Dark", light: "Light", wechat: "WeChat" } |
+| path    | 主题样式地址 | `https://unpkg.com/vditor@${VDITOR_VERSION}/dist/css/content-theme`          |
 
 #### options.preview.math
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| inlineDigit | 内联数学公式起始 $ 后是否允许数字 | false |
-| macros | 使用 MathJax 渲染时传入的宏定义 | {} |
-| engine | 数学公式渲染引擎：KaTeX, MathJax | 'KaTeX' |
-| mathJaxOptions | 数学公式渲染引擎为 MathJax 时的参数 | - |
+|                | 说明                                | 默认值  |
+| -------------- | ----------------------------------- | ------- |
+| inlineDigit    | 内联数学公式起始 $ 后是否允许数字   | false   |
+| macros         | 使用 MathJax 渲染时传入的宏定义     | {}      |
+| engine         | 数学公式渲染引擎：KaTeX, MathJax    | 'KaTeX' |
+| mathJaxOptions | 数学公式渲染引擎为 MathJax 时的参数 | -       |
 
 #### options.preview.actions?: Array<IPreviewAction | IPreviewActionCustom>
 
 默认值为 ["desktop", "tablet", "mobile", "mp-wechat", "zhihu"]。
 可从默认值中挑选进行配置，也可使用以下字段进行自定制开发。
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| key | 按钮唯一标识，不能为空 | - |
-| text | 按钮文字 | - |
-| tooltip | 提示 | - |
-| className | 按钮类名 | - |
-| click(key: string) | 按钮点击回调事件 | - |
+|                    | 说明                   | 默认值 |
+| ------------------ | ---------------------- | ------ |
+| key                | 按钮唯一标识，不能为空 | -      |
+| text               | 按钮文字               | -      |
+| tooltip            | 提示                   | -      |
+| className          | 按钮类名               | -      |
+| click(key: string) | 按钮点击回调事件       | -      |
 
 #### options.preview.render.media
 
-|        | 说明        | 默认值  |
-|--------|-----------|------|
-| enable | 是否启用多媒体渲染 | true |
+|        | 说明               | 默认值 |
+| ------ | ------------------ | ------ |
+| enable | 是否启用多媒体渲染 | true   |
 
 #### options.image
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| isPreview | 是否预览图片 | true |
-| preview(bom: Element) => void | 图片预览处理 | - |
+|                               | 说明         | 默认值 |
+| ----------------------------- | ------------ | ------ |
+| isPreview                     | 是否预览图片 | true   |
+| preview(bom: Element) => void | 图片预览处理 | -      |
 
 #### options.link
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| isOpen | 是否打开链接地址 | true |
-| click(bom: Element) => void | 点击链接事件 | - |
+|                             | 说明             | 默认值 |
+| --------------------------- | ---------------- | ------ |
+| isOpen                      | 是否打开链接地址 | true   |
+| click(bom: Element) => void | 点击链接事件     | -      |
 
 #### options.hint
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| parse | 是否进行 md 解析 | true |
-| delay | 提示 debounce 毫秒间隔 | 200 |
-| emoji | 默认表情，可从[lute/emoji_map](https://github.com/88250/lute/blob/master/parse/emoji_map.go) 中选取，也可自定义 | { '+1': '👍', '-1': '👎', 'heart': '❤️', 'cold_sweat': '😰' } |
-| emojiTail | 常用表情提示 | - |
-| emojiPath | 表情图片地址 | `https://unpkg.com/vditor@${VDITOR_VERSION}/dist/images/emoji` |
-| extend: IHintExtend[] | 对 @/话题等关键字自动补全的扩展 | [] |
+|                       | 说明                                                                                                         | 默认值                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| parse                 | 是否进行 md 解析                                                                                             | true                                                             |
+| delay                 | 提示 debounce 毫秒间隔                                                                                       | 200                                                              |
+| emoji                 | 默认表情，可从[lute/emoji_map](https://github.com/88250/lute/blob/master/parse/emoji_map.go) 中选取，也可自定义 | { '+1': '👍', '-1': '👎', 'heart': '❤️', 'cold_sweat': '😰' }  |
+| emojiTail             | 常用表情提示                                                                                                 | -                                                                |
+| emojiPath             | 表情图片地址                                                                                                 | `https://unpkg.com/vditor@${VDITOR_VERSION}/dist/images/emoji` |
+| extend: IHintExtend[] | 对 @/话题等关键字自动补全的扩展                                                                              | []                                                               |
+
+```ts
+interface IHintData {
+  html: string;
+  value: string;
+}
+
+interface IHintExtend {
+    key: string;
+
+    hint?(value: string): IHintData[] | Promise<IHintData[]>;
+}
+```
+
+```ts
+interface IHintData {
+  html: string;
+  value: string;
+}
+
+interface IHintExtend {
+    key: string;
+
+    hint?(value: string): IHintData[] | Promise<IHintData[]>;
+}
+```
+
+```ts
+interface IHintData {
+  html: string;
+  value: string;
+}
+
+interface IHintExtend {
+    key: string;
+
+    hint?(value: string): IHintData[] | Promise<IHintData[]>;
+}
+```
 
 ```ts
 interface IHintData {
@@ -424,7 +533,100 @@ xhr.send(formData);  // formData = FormData.append("file[]", File)
 }
 ```
 
+```js
+// POST data
+xhr.send(formData);  // formData = FormData.append("file[]", File)
+// return data
+{
+ "msg": "",
+ "code": 0,
+ "data": {
+ "errFiles": ['filename', 'filename2'],
+ "succMap": {
+   "filename3": "filepath3",
+   "filename3": "filepath3"
+   }
+ }
+}
+```
+
+```js
+// POST data
+xhr.send(formData);  // formData = FormData.append("file[]", File)
+// return data
+{
+ "msg": "",
+ "code": 0,
+ "data": {
+ "errFiles": ['filename', 'filename2'],
+ "succMap": {
+   "filename3": "filepath3",
+   "filename3": "filepath3"
+   }
+ }
+}
+```
+
+```js
+// POST data
+xhr.send(formData);  // formData = FormData.append("file[]", File)
+// return data
+{
+ "msg": "",
+ "code": 0,
+ "data": {
+ "errFiles": ['filename', 'filename2'],
+ "succMap": {
+   "filename3": "filepath3",
+   "filename3": "filepath3"
+   }
+ }
+}
+```
+
 * 为了防止站外图片失效，`linkToImgUrl` 可将剪贴板中的站外图片地址传到服务器端进行保存处理，其数据结构如下：
+
+```js
+// POST data
+xhr.send(JSON.stringify({url: src})); // src 为站外图片地址
+// return data
+{
+ msg: '',
+ code: 0,
+ data : {
+   originalURL: '',
+   url: ''
+ }
+}
+```
+
+```js
+// POST data
+xhr.send(JSON.stringify({url: src})); // src 为站外图片地址
+// return data
+{
+ msg: '',
+ code: 0,
+ data : {
+   originalURL: '',
+   url: ''
+ }
+}
+```
+
+```js
+// POST data
+xhr.send(JSON.stringify({url: src})); // src 为站外图片地址
+// return data
+{
+ msg: '',
+ code: 0,
+ data : {
+   originalURL: '',
+   url: ''
+ }
+}
+```
 
 ```js
 // POST data
@@ -462,91 +664,151 @@ if (xhr.status === 200) {
 }
 ```
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| url | 上传 url，为空则不会触发上传相关事件 | '' |
-| max | 上传文件最大 Byte | 10 * 1024 * 1024 |
-| linkToImgUrl | 剪切板中包含图片地址时，使用此 url 重新上传 | '' |
-| linkToImgCallback(responseText: string) | 图片地址上传回调 | - |
-| linkToImgFormat(responseText: string): string | 对图片地址上传的返回值进行格式化 | - |
-| success(editor: HTMLPreElement, msg: string) | 上传成功回调 | - |
-| error(msg: string) | 上传失败回调 | - |
-| token | CORS 上传验证，头为 X-Upload-Token | - |
-| withCredentials | 跨站点访问控制 | false |
-| headers | 请求头设置 | - |
-| filename(name: string): string | 文件名安全处理 | name => name.replace(/\W/g, '') |
-| accept | 文件上传类型，同[input accept](https://www.w3schools.com/tags/att_input_accept.asp) | - |
-| validate(files: File[]) => string \| boolean | 校验，成功时返回 true 否则返回错误信息 | - |
-| handler(files: File[]) => string \| null \| Promise<string> \| Promise<null> | 自定义上传，当发生错误时返回错误信息 | - |
-| format(files: File[], responseText: string): string | 对服务端返回的数据进行转换，以满足内置的数据结构 | - |
-| file(files: File[]): File[] \| Promise<File[]> | 将上传的文件处理后再返回 | - |
-| setHeaders(): { [key: string]: string } | 上传前使用返回值设置头 | - |
-| extraData: { [key: string]: string \| Blob } | 为 FormData 添加额外的参数 | - |
-| multiple | 上传文件是否为多个 | true |
-| fieldName | 上传字段名称 | 'file[]' |
-| renderLinkDest?(vditor: IVditor, node: ILuteNode, entering: boolean): [string, number] | 处理剪贴板中的图片地址 | '' |
+```js
+if (xhr.status === 200) {
+    if (vditor.options.upload.success) {
+        vditor.options.upload.success(editorElement, xhr.responseText);
+    } else {
+        let responseText = xhr.responseText;
+        if (vditor.options.upload.format) {
+            responseText = vditor.options.upload.format(files as File [], xhr.responseText);
+        }
+        genUploadedLabel(responseText, vditor);
+    }
+} else {
+    if (vditor.options.upload.error) {
+        vditor.options.upload.error(xhr.responseText);
+    } else {
+        vditor.tip.show(xhr.responseText);
+    }
+}
+```
+
+```js
+if (xhr.status === 200) {
+    if (vditor.options.upload.success) {
+        vditor.options.upload.success(editorElement, xhr.responseText);
+    } else {
+        let responseText = xhr.responseText;
+        if (vditor.options.upload.format) {
+            responseText = vditor.options.upload.format(files as File [], xhr.responseText);
+        }
+        genUploadedLabel(responseText, vditor);
+    }
+} else {
+    if (vditor.options.upload.error) {
+        vditor.options.upload.error(xhr.responseText);
+    } else {
+        vditor.tip.show(xhr.responseText);
+    }
+}
+```
+
+```js
+if (xhr.status === 200) {
+    if (vditor.options.upload.success) {
+        vditor.options.upload.success(editorElement, xhr.responseText);
+    } else {
+        let responseText = xhr.responseText;
+        if (vditor.options.upload.format) {
+            responseText = vditor.options.upload.format(files as File [], xhr.responseText);
+        }
+        genUploadedLabel(responseText, vditor);
+    }
+} else {
+    if (vditor.options.upload.error) {
+        vditor.options.upload.error(xhr.responseText);
+    } else {
+        vditor.tip.show(xhr.responseText);
+    }
+}
+```
+
+|                                                                                        | 说明                                                                             | 默认值                          |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------- |
+| url                                                                                    | 上传 url，为空则不会触发上传相关事件                                             | ''                              |
+| max                                                                                    | 上传文件最大 Byte                                                                | 10 * 1024 * 1024                |
+| linkToImgUrl                                                                           | 剪切板中包含图片地址时，使用此 url 重新上传                                      | ''                              |
+| linkToImgCallback(responseText: string)                                                | 图片地址上传回调                                                                 | -                               |
+| linkToImgFormat(responseText: string): string                                          | 对图片地址上传的返回值进行格式化                                                 | -                               |
+| success(editor: HTMLPreElement, msg: string)                                           | 上传成功回调                                                                     | -                               |
+| error(msg: string)                                                                     | 上传失败回调                                                                     | -                               |
+| token                                                                                  | CORS 上传验证，头为 X-Upload-Token                                               | -                               |
+| withCredentials                                                                        | 跨站点访问控制                                                                   | false                           |
+| headers                                                                                | 请求头设置                                                                       | -                               |
+| filename(name: string): string                                                         | 文件名安全处理                                                                   | name => name.replace(/\W/g, '') |
+| accept                                                                                 | 文件上传类型，同[input accept](https://www.w3schools.com/tags/att_input_accept.asp) | -                               |
+| validate(files: File[]) => string\| boolean                                            | 校验，成功时返回 true 否则返回错误信息                                           | -                               |
+| handler(files: File[]) => string\| null \| Promise<string> \| Promise<null>            | 自定义上传，当发生错误时返回错误信息                                             | -                               |
+| format(files: File[], responseText: string): string                                    | 对服务端返回的数据进行转换，以满足内置的数据结构                                 | -                               |
+| file(files: File[]): File[]\| Promise<File[]>                                          | 将上传的文件处理后再返回                                                         | -                               |
+| setHeaders(): { [key: string]: string }                                                | 上传前使用返回值设置头                                                           | -                               |
+| extraData: { [key: string]: string\| Blob }                                            | 为 FormData 添加额外的参数                                                       | -                               |
+| multiple                                                                               | 上传文件是否为多个                                                               | true                            |
+| fieldName                                                                              | 上传字段名称                                                                     | 'file[]'                        |
+| renderLinkDest?(vditor: IVditor, node: ILuteNode, entering: boolean): [string, number] | 处理剪贴板中的图片地址                                                           | ''                              |
 
 #### options.resize
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| enable | 是否支持大小拖拽 | false |
-| position | 拖拽栏位置：'top', 'bottom' | 'bottom' |
-| after(height: number) | 拖拽结束的回调 | - |
+|                       | 说明                        | 默认值   |
+| --------------------- | --------------------------- | -------- |
+| enable                | 是否支持大小拖拽            | false    |
+| position              | 拖拽栏位置：'top', 'bottom' | 'bottom' |
+| after(height: number) | 拖拽结束的回调              | -        |
 
 #### options.classes
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| preview | 预览元素上的 className | '' |
+|         | 说明                   | 默认值 |
+| ------- | ---------------------- | ------ |
+| preview | 预览元素上的 className | ''     |
 
 #### options.fullscreen
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| index | 全屏层级 | 90 |
+|       | 说明     | 默认值 |
+| ----- | -------- | ------ |
+| index | 全屏层级 | 90     |
 
 #### options.outline
 
-|   | 说明 | 默认值 |
-| - | - | - |
-| enable | 初始化是否展现大纲 | false |
+|          | 说明                      | 默认值 |
+| -------- | ------------------------- | ------ |
+| enable   | 初始化是否展现大纲        | false  |
 | position | 大纲位置：'left', 'right' | 'left' |
 
 #### methods
 
-|   | 说明 |
-| - | - |
-| exportJSON(markdown: string) | 根据 Markdown 获取对应 JSON |
-| getValue() | 获取 Markdown 内容 |
-| getHTML() | 获取 HTML 内容 |
-| insertValue(value: string, render = true) | 在焦点处插入内容，并默认进行 Markdown 渲染 |
-| focus() | 聚焦到编辑器 |
-| blur() | 让编辑器失焦 |
-| disabled() | 禁用编辑器 |
-| enable() | 解除编辑器禁用 |
-| getSelection(): string | 返回选中的字符串 |
-| setValue(markdown: string, clearStack = false) | 设置编辑器内容且选中清空历史栈 |
-| clearStack() | 清空撤销和重做记录栈|
-| renderPreview(value?: string) | 设置预览区域内容 |
-| getCursorPosition():{top: number, left: number} | 获取焦点位置 |
-| deleteValue() | 删除选中内容 |
-| updateValue(value: string) | 更新选中内容 |
-| isUploading() | 上传是否还在进行中 |
-| clearCache() | 清除缓存 |
-| disabledCache() | 禁用缓存 |
-| enableCache() | 启用缓存 |
-| html2md(value: string) | HTML 转 md |
-| tip(text: string, time: number) | 消息提示。time 为 0 将一直显示 |
-| setPreviewMode(mode: "both" \| "editor") | 设置预览模式 |
-| setTheme(theme: "dark" \| "classic", contentTheme?: string, codeTheme?: string, contentThemePath?: string) | 设置主题、内容主题及代码块风格 |
-| getCurrentMode(): string | 获取编辑器当前编辑模式 |
-| destroy() | 销毁编辑器 |
-| getCommentIds(): {id: string, top: number}[] | 获取所有评论 |
-| hlCommentIds(ids: string[]) | 高亮评论 |
-| unHlCommentIds(ids: string[]) | 取消评论高亮 |
-| removeCommentIds(removeIds: string[]) | 删除评论 |
-| updateToolbarConfig(config: {hide?: boolean, pin?: boolean}) | 更新工具栏配置 |
+|                                                                                                           | 说明                                       |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| exportJSON(markdown: string)                                                                              | 根据 Markdown 获取对应 JSON                |
+| getValue()                                                                                                | 获取 Markdown 内容                         |
+| getHTML()                                                                                                 | 获取 HTML 内容                             |
+| insertValue(value: string, render = true)                                                                 | 在焦点处插入内容，并默认进行 Markdown 渲染 |
+| focus()                                                                                                   | 聚焦到编辑器                               |
+| blur()                                                                                                    | 让编辑器失焦                               |
+| disabled()                                                                                                | 禁用编辑器                                 |
+| enable()                                                                                                  | 解除编辑器禁用                             |
+| getSelection(): string                                                                                    | 返回选中的字符串                           |
+| setValue(markdown: string, clearStack = false)                                                            | 设置编辑器内容且选中清空历史栈             |
+| clearStack()                                                                                              | 清空撤销和重做记录栈                       |
+| renderPreview(value?: string)                                                                             | 设置预览区域内容                           |
+| getCursorPosition():{top: number, left: number}                                                           | 获取焦点位置                               |
+| deleteValue()                                                                                             | 删除选中内容                               |
+| updateValue(value: string)                                                                                | 更新选中内容                               |
+| isUploading()                                                                                             | 上传是否还在进行中                         |
+| clearCache()                                                                                              | 清除缓存                                   |
+| disabledCache()                                                                                           | 禁用缓存                                   |
+| enableCache()                                                                                             | 启用缓存                                   |
+| html2md(value: string)                                                                                    | HTML 转 md                                 |
+| tip(text: string, time: number)                                                                           | 消息提示。time 为 0 将一直显示             |
+| setPreviewMode(mode: "both"\| "editor")                                                                   | 设置预览模式                               |
+| setTheme(theme: "dark"\| "classic", contentTheme?: string, codeTheme?: string, contentThemePath?: string) | 设置主题、内容主题及代码块风格             |
+| getCurrentMode(): string                                                                                  | 获取编辑器当前编辑模式                     |
+| destroy()                                                                                                 | 销毁编辑器                                 |
+| getCommentIds(): {id: string, top: number}[]                                                              | 获取所有评论                               |
+| hlCommentIds(ids: string[])                                                                               | 高亮评论                                   |
+| unHlCommentIds(ids: string[])                                                                             | 取消评论高亮                               |
+| removeCommentIds(removeIds: string[])                                                                     | 删除评论                                   |
+| updateToolbarConfig(config: {hide?: boolean, pin?: boolean})                                              | 更新工具栏配置                             |
 
 #### static methods
 
@@ -554,6 +816,33 @@ if (xhr.status === 200) {
 
 ```js
 Vditor.mermaidRender(document)
+```
+
+```js
+Vditor.mermaidRender(document)
+```
+
+```js
+Vditor.mermaidRender(document)
+```
+
+```js
+Vditor.mermaidRender(document)
+```
+
+```js
+import VditorPreview from 'vditor/dist/method.min'
+VditorPreview.mermaidRender(document)
+```
+
+```js
+import VditorPreview from 'vditor/dist/method.min'
+VditorPreview.mermaidRender(document)
+```
+
+```js
+import VditorPreview from 'vditor/dist/method.min'
+VditorPreview.mermaidRender(document)
 ```
 
 ```js
@@ -588,31 +877,106 @@ options?: IPreviewOptions {
 }
 ```
 
+```ts
+previewElement: HTMLDivElement,   // 使用该元素进行渲染
+markdown: string,  // 需要渲染的 markdown 原文
+options?: IPreviewOptions {
+  mode: "dark" | "light";
+  anchor?: number;  // 为标题添加锚点 0：不渲染；1：渲染于标题前；2：渲染于标题后，默认 0
+  customEmoji?: { [key: string]: string };    // 自定义 emoji，默认为 {}
+  lang?: (keyof II18nLang);    // 语言，默认为 'zh_CN'
+  emojiPath?: string;    // 表情图片路径
+  hljs?: IHljs; // 参见 options.preview.hljs
+  speech?: {  // 对选中后的内容进行阅读
+    enable?: boolean,
+  };
+  math?: IMath; // 数学公式渲染配置
+  cdn?: string; // 自建 CDN 地址
+  transform?(html: string): string; // 在渲染前进行的回调方法
+  after?(); // 渲染完成后的回调
+  lazyLoadImage?: string; // 设置为 Loading 图片地址后将启用图片的懒加载
+  markdown?: options.preview.markdown;
+  theme?: options.preview.theme;
+  render?: options.preview.render;
+  renderers?: ILuteRender; // 自定义渲染 https://ld246.com/article/1588412297062
+}
+```
+
+```ts
+previewElement: HTMLDivElement,   // 使用该元素进行渲染
+markdown: string,  // 需要渲染的 markdown 原文
+options?: IPreviewOptions {
+  mode: "dark" | "light";
+  anchor?: number;  // 为标题添加锚点 0：不渲染；1：渲染于标题前；2：渲染于标题后，默认 0
+  customEmoji?: { [key: string]: string };    // 自定义 emoji，默认为 {}
+  lang?: (keyof II18nLang);    // 语言，默认为 'zh_CN'
+  emojiPath?: string;    // 表情图片路径
+  hljs?: IHljs; // 参见 options.preview.hljs
+  speech?: {  // 对选中后的内容进行阅读
+    enable?: boolean,
+  };
+  math?: IMath; // 数学公式渲染配置
+  cdn?: string; // 自建 CDN 地址
+  transform?(html: string): string; // 在渲染前进行的回调方法
+  after?(); // 渲染完成后的回调
+  lazyLoadImage?: string; // 设置为 Loading 图片地址后将启用图片的懒加载
+  markdown?: options.preview.markdown;
+  theme?: options.preview.theme;
+  render?: options.preview.render;
+  renderers?: ILuteRender; // 自定义渲染 https://ld246.com/article/1588412297062
+}
+```
+
+```ts
+previewElement: HTMLDivElement,   // 使用该元素进行渲染
+markdown: string,  // 需要渲染的 markdown 原文
+options?: IPreviewOptions {
+  mode: "dark" | "light";
+  anchor?: number;  // 为标题添加锚点 0：不渲染；1：渲染于标题前；2：渲染于标题后，默认 0
+  customEmoji?: { [key: string]: string };    // 自定义 emoji，默认为 {}
+  lang?: (keyof II18nLang);    // 语言，默认为 'zh_CN'
+  emojiPath?: string;    // 表情图片路径
+  hljs?: IHljs; // 参见 options.preview.hljs
+  speech?: {  // 对选中后的内容进行阅读
+    enable?: boolean,
+  };
+  math?: IMath; // 数学公式渲染配置
+  cdn?: string; // 自建 CDN 地址
+  transform?(html: string): string; // 在渲染前进行的回调方法
+  after?(); // 渲染完成后的回调
+  lazyLoadImage?: string; // 设置为 Loading 图片地址后将启用图片的懒加载
+  markdown?: options.preview.markdown;
+  theme?: options.preview.theme;
+  render?: options.preview.render;
+  renderers?: ILuteRender; // 自定义渲染 https://ld246.com/article/1588412297062
+}
+```
+
 * ⚠️ `method.min.js`  和 `index.min.js` 不可同时引入
 
-|   | 说明 |
-| - | - |
-| previewImage(oldImgElement: HTMLImageElement, lang: keyof II18n = "zh_CN", theme = "classic") | 点击图片预览 |
-| mermaidRender(element: HTMLElement, cdn = options.cdn, theme = options.theme) | 流程图/时序图/甘特图 |
-| SMILESRender(element: HTMLElement, cdn = options.cdn, theme = options.theme) | 化学物质结构 |
-| markmapRender(element: HTMLElement, cdn = options.cdn) | markdown 思维导图 |
-| flowchartRender(element: HTMLElement, cdn = options.cdn) | flowchart 渲染 |
-| codeRender(element: HTMLElement, option?: IHljs) | 为 element 中的代码块添加复制按钮 |
-| chartRender(element: (HTMLElement \| Document) = document, cdn = options.cdn, theme = options.theme) | 图表渲染 |
-| mindmapRender(element: (HTMLElement \| Document) = document, cdn = options.cdn, theme = options.theme) | 脑图渲染 |
-| plantumlRender(element: (HTMLElement \| Document) = document, cdn = options.cdn) | plantuml 渲染 |
-| abcRender(element: (HTMLElement \| Document) = document, cdn = options.cdn) | 五线谱渲染 |
-| md2html(mdText: string, options?: IPreviewOptions): Promise\<string> | Markdown 文本转换为 HTML，该方法需使用[异步编程](https://ld246.com/article/1546828434083?r=Vanessa#toc_h3_1) |
-| preview(previewElement: HTMLDivElement, markdown: string, options?: IPreviewOptions) | 页面 Markdown 文章渲染 |
-| highlightRender(hljsOption?: IHljs, element?: HTMLElement \| Document, cdn = options.cdn) | 为 element 中的代码块进行高亮渲染 |
-| mediaRender(element: HTMLElement) | 为[特定链接](https://ld246.com/article/1589813914768)分别渲染为视频、音频、嵌入的 iframe |
-| mathRender(element: HTMLElement, options?: {cdn?: string, math?: IMath}) | 对数学公式进行渲染 |
-| speechRender(element: HTMLElement, lang?: (keyof II18nLang)) | 对选中的文字进行阅读 |
-| graphvizRender(element: HTMLElement, cdn?: string) | 对 graphviz 进行渲染 |
-| outlineRender(contentElement: HTMLElement, targetElement: Element) | 对大纲进行渲染 |
-| lazyLoadImageRender(element: (HTMLElement \| Document) = document) | 对启用懒加载的图片进行渲染 |
-| setCodeTheme(codeTheme: string, cdn = options.cdn) | 设置代码主题，codeTheme 参见 options.preview.hljs.style |
-| setContentTheme(contentTheme: string, path: string) | 设置内容主题，contentTheme 参见 options.preview.theme.list |
+|                                                                                                       | 说明                                                                                                      |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| previewImage(oldImgElement: HTMLImageElement, lang: keyof II18n = "zh_CN", theme = "classic")         | 点击图片预览                                                                                              |
+| mermaidRender(element: HTMLElement, cdn = options.cdn, theme = options.theme)                         | 流程图/时序图/甘特图                                                                                      |
+| SMILESRender(element: HTMLElement, cdn = options.cdn, theme = options.theme)                          | 化学物质结构                                                                                              |
+| markmapRender(element: HTMLElement, cdn = options.cdn)                                                | markdown 思维导图                                                                                         |
+| flowchartRender(element: HTMLElement, cdn = options.cdn)                                              | flowchart 渲染                                                                                            |
+| codeRender(element: HTMLElement, option?: IHljs)                                                      | 为 element 中的代码块添加复制按钮                                                                         |
+| chartRender(element: (HTMLElement\| Document) = document, cdn = options.cdn, theme = options.theme)   | 图表渲染                                                                                                  |
+| mindmapRender(element: (HTMLElement\| Document) = document, cdn = options.cdn, theme = options.theme) | 脑图渲染                                                                                                  |
+| plantumlRender(element: (HTMLElement\| Document) = document, cdn = options.cdn)                       | plantuml 渲染                                                                                             |
+| abcRender(element: (HTMLElement\| Document) = document, cdn = options.cdn)                            | 五线谱渲染                                                                                                |
+| md2html(mdText: string, options?: IPreviewOptions): Promise\<string>                                  | Markdown 文本转换为 HTML，该方法需使用[异步编程](https://ld246.com/article/1546828434083?r=Vanessa#toc_h3_1) |
+| preview(previewElement: HTMLDivElement, markdown: string, options?: IPreviewOptions)                  | 页面 Markdown 文章渲染                                                                                    |
+| highlightRender(hljsOption?: IHljs, element?: HTMLElement\| Document, cdn = options.cdn)              | 为 element 中的代码块进行高亮渲染                                                                         |
+| mediaRender(element: HTMLElement)                                                                     | 为[特定链接](https://ld246.com/article/1589813914768)分别渲染为视频、音频、嵌入的 iframe                     |
+| mathRender(element: HTMLElement, options?: {cdn?: string, math?: IMath})                              | 对数学公式进行渲染                                                                                        |
+| speechRender(element: HTMLElement, lang?: (keyof II18nLang))                                          | 对选中的文字进行阅读                                                                                      |
+| graphvizRender(element: HTMLElement, cdn?: string)                                                    | 对 graphviz 进行渲染                                                                                      |
+| outlineRender(contentElement: HTMLElement, targetElement: Element)                                    | 对大纲进行渲染                                                                                            |
+| lazyLoadImageRender(element: (HTMLElement\| Document) = document)                                     | 对启用懒加载的图片进行渲染                                                                                |
+| setCodeTheme(codeTheme: string, cdn = options.cdn)                                                    | 设置代码主题，codeTheme 参见 options.preview.hljs.style                                                   |
+| setContentTheme(contentTheme: string, path: string)                                                   | 设置内容主题，contentTheme 参见 options.preview.theme.list                                                |
 
 ## 🏗 开发文档
 
