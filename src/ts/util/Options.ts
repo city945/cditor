@@ -191,20 +191,20 @@ export class Options {
             {
                 icon: '<svg><use xlink:href="#vditor-icon-export"></use></svg>',
                 name: "export",
-                tipPosition: "ne",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘E",
                 icon: '<svg><use xlink:href="#vditor-icon-emoji"></use></svg>',
                 name: "emoji",
-                tipPosition: "ne",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘H",
                 icon:
                     '<svg><use xlink:href="#vditor-icon-headings"></use></svg>',
                 name: "headings",
-                tipPosition: "ne",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘B",
@@ -212,7 +212,7 @@ export class Options {
                 name: "bold",
                 prefix: "**",
                 suffix: "**",
-                tipPosition: "ne",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘I",
@@ -220,7 +220,7 @@ export class Options {
                 name: "italic",
                 prefix: "*",
                 suffix: "*",
-                tipPosition: "ne",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘D",
@@ -228,7 +228,7 @@ export class Options {
                 name: "strike",
                 prefix: "~~",
                 suffix: "~~",
-                tipPosition: "ne",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘K",
@@ -236,7 +236,7 @@ export class Options {
                 name: "link",
                 prefix: "[",
                 suffix: "](https://)",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 name: "|",
@@ -246,7 +246,7 @@ export class Options {
                 icon: '<svg><use xlink:href="#vditor-icon-list"></use></svg>',
                 name: "list",
                 prefix: "* ",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘O",
@@ -254,27 +254,27 @@ export class Options {
                     '<svg><use xlink:href="#vditor-icon-ordered-list"></use></svg>',
                 name: "ordered-list",
                 prefix: "1. ",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘J",
                 icon: '<svg><use xlink:href="#vditor-icon-check"></use></svg>',
                 name: "check",
                 prefix: "* [ ] ",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⇧⌘I",
                 icon:
                     '<svg><use xlink:href="#vditor-icon-outdent"></use></svg>',
                 name: "outdent",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⇧⌘O",
                 icon: '<svg><use xlink:href="#vditor-icon-indent"></use></svg>',
                 name: "indent",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 name: "|",
@@ -284,14 +284,14 @@ export class Options {
                 icon: '<svg><use xlink:href="#vditor-icon-quote"></use></svg>',
                 name: "quote",
                 prefix: "> ",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⇧⌘H",
                 icon: '<svg><use xlink:href="#vditor-icon-line"></use></svg>',
                 name: "line",
                 prefix: "---",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘U",
@@ -299,7 +299,7 @@ export class Options {
                 name: "code",
                 prefix: "```",
                 suffix: "\n```",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘G",
@@ -308,19 +308,19 @@ export class Options {
                 name: "inline-code",
                 prefix: "`",
                 suffix: "`",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⇧⌘B",
                 icon: '<svg><use xlink:href="#vditor-icon-before"></use></svg>',
                 name: "insert-before",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⇧⌘E",
                 icon: '<svg><use xlink:href="#vditor-icon-after"></use></svg>',
                 name: "insert-after",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 name: "|",
@@ -328,12 +328,12 @@ export class Options {
             {
                 icon: '<svg><use xlink:href="#vditor-icon-upload"></use></svg>',
                 name: "upload",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 icon: '<svg><use xlink:href="#vditor-icon-record"></use></svg>',
                 name: "record",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘M",
@@ -342,7 +342,7 @@ export class Options {
                 prefix: "| col1",
                 suffix:
                     " | col2 | col3 |\n| --- | --- | --- |\n|  |  |  |\n|  |  |  |",
-                tipPosition: "n",
+                tipPosition: "s",
             },
             {
                 name: "|",
@@ -351,13 +351,13 @@ export class Options {
                 hotkey: "⌘Z",
                 icon: '<svg><use xlink:href="#vditor-icon-undo"></use></svg>',
                 name: "undo",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘Y",
                 icon: '<svg><use xlink:href="#vditor-icon-redo"></use></svg>',
                 name: "redo",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 name: "|",
@@ -365,63 +365,63 @@ export class Options {
             {
                 icon: '<svg><use xlink:href="#vditor-icon-more"></use></svg>',
                 name: "more",
-                tipPosition: "e",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘'",
                 icon:
                     '<svg><use xlink:href="#vditor-icon-fullscreen"></use></svg>',
                 name: "fullscreen",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon: '<svg><use xlink:href="#vditor-icon-edit"></use></svg>',
                 name: "edit-mode",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 hotkey: "⌘P",
                 icon: '<svg><use xlink:href="#vditor-icon-both"></use></svg>',
                 name: "both",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon:
                     '<svg><use xlink:href="#vditor-icon-preview"></use></svg>',
                 name: "preview",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon:
                     '<svg><use xlink:href="#vditor-icon-align-center"></use></svg>',
                 name: "outline",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon: '<svg><use xlink:href="#vditor-icon-theme"></use></svg>',
                 name: "content-theme",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon:
                     '<svg><use xlink:href="#vditor-icon-code-theme"></use></svg>',
                 name: "code-theme",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon: '<svg><use xlink:href="#vditor-icon-bug"></use></svg>',
                 name: "devtools",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon: '<svg><use xlink:href="#vditor-icon-info"></use></svg>',
                 name: "info",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 icon: '<svg><use xlink:href="#vditor-icon-help"></use></svg>',
                 name: "help",
-                tipPosition: "nw",
+                tipPosition: "s",
             },
             {
                 name: "br",

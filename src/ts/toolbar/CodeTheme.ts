@@ -16,7 +16,7 @@ export class CodeTheme extends MenuItem {
         panelElement.className = `vditor-hint${menuItem.level === 2 ? "" : " vditor-panel--arrow"}`;
         let innerHTML = "";
         Constants.CODE_THEME.forEach((theme) => {
-            innerHTML += `<button>${theme}</button>`;
+            innerHTML += `<button id='code-theme-item'>${theme}</button>`;
         });
         panelElement.innerHTML =
             `<div style="overflow: auto;max-height:${window.innerHeight / 2}px">${innerHTML}</div>`;

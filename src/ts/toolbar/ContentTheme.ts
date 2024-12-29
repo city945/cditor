@@ -15,7 +15,8 @@ export class ContentTheme extends MenuItem {
         panelElement.className = `vditor-hint${menuItem.level === 2 ? "" : " vditor-panel--arrow"}`;
         let innerHTML = "";
         Object.keys(vditor.options.preview.theme.list).forEach((key) => {
-            innerHTML += `<button data-type="${key}">${vditor.options.preview.theme.list[key]}</button>`;
+            // 添加 id 以便能获取到主题设置时的 click 事件
+            innerHTML += `<button id='content-theme-item' data-type="${key}">${vditor.options.preview.theme.list[key]}</button>`;
         });
         panelElement.innerHTML =
             `<div style="overflow: auto;max-height:${window.innerHeight / 2}px">${innerHTML}</div>`;
